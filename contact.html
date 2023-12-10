@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Information</title>
+    <style>
+
+        body, h1, h2, p, ul, blockquote, img {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: 'Times New Roman';
+            background-color: darkslategrey;
+            color: floralwhite;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+
+        header {
+            background-color: dimgrey;
+            color: floralwhite;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 1em;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 1em;
+            }
+
+            nav ul a {
+                text-decoration: none;
+                color: darkslategrey;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+                nav ul a:hover {
+                    color: floralwhite;
+                }
+
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1em;
+            background-color: dimgrey;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+
+        section {
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        blockquote {
+            font-style: italic;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        p {
+            margin-bottom: 1em;
+        }
+
+
+        footer {
+            margin-top: 2em;
+            padding-top: 1em;
+            background-color: floralwhite;
+            color: black;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .date {
+            font-style: italic;
+        }
+
+        .job-description {
+            margin-left: 20px;
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
+        .job-descriptiontwo {
+            margin-left: -60px;
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
+        .goals {
+            font-weight: inherit;
+            margin-left: 10px;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .goalstext {
+            font-weight: inherit;
+            margin-left: 10px;
+            margin-bottom: 2em;
+            text-align: left;
+        }
+
+        .content section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .content section img {
+                max-width: 60%;
+                margin-top: 1em;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h1>Welcome to My Contact Information</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Introduction</a></li>
+                    <li><a href="objective.html">Objective</a></li>
+                    <li><a href="experience.html">Professional Experience</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="accomplishments.html">Accomplishments</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="contact.jpg" alt="My Picture">
+                <p style="margin-left: 500px;">
+                    <h2>I look forward to hearing from you!</h2>
+                    <h3>Email: anicassi@students.kennesaw.edu</h3>
+                    <h3>Phone: (***)-***-****</h3>
+                    <section class="contact-form">
+                        <h2>Contact Me</h2>
+                        <form action="#" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </section>
+</div>
+
+    <footer>
+        <p>&copy; 2023 - Alexandra Nicassio</p>
+    </footer>
+    </div>
+</body>
+</html>
